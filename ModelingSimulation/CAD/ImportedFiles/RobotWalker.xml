@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimscapeMultibodyImportXML xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+   <Created by="Sebastian Castro" from="Onshape" on="07/18/17||10:18:36" using="Simscape Multibody Exporter"/>
+   <ModelUnits length="centimeter" mass="kilogram"/>
+   <DataUnits length="meter" mass="kilogram"/>
+   <RootAssembly name="RobotWalker" uid="5295d0860871d6a3d51ca630" version="w-58d64f59407477ebd625e16e">
+      <InstanceTree>
+         <Instance entityUid="JHD*:*b9d5fa456d034e21ace1d56d" grounded="true" name="Torso &lt;1&gt;" uid="MNuUH0gLvV4HL6hWg">
+            <Transform>
+               <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 0.000000000 -0.000000000 1.000000000 </Rotation>
+               <Translation>-0.013820930 -0.037256807 0.054006443 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JND*:*b9d5fa456d034e21ace1d56d" name="Lower Leg &lt;1&gt;" uid="MZmKfcRYop5VYuEvK">
+            <Transform>
+               <Rotation>1.000000000 0.000000000 -0.000000000 -0.000000000 1.000000000 -0.000000000 0.000000000 0.000000000 1.000000000 </Rotation>
+               <Translation>-0.018820930 -0.087256807 -0.115993557 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JQD*:*b9d5fa456d034e21ace1d56d" name="Foot &lt;1&gt;" uid="Mbat/TCp+v7kgn7G3">
+            <Transform>
+               <Rotation>1.000000000 -0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 0.000000000 -0.000000000 1.000000000 </Rotation>
+               <Translation>-0.008820930 -0.087256807 -0.170993557 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JQD*:*b9d5fa456d034e21ace1d56d" name="Foot &lt;2&gt;" uid="MfHUCk6+otyOqDNuO">
+            <Transform>
+               <Rotation>1.000000000 -0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 0.000000000 -0.000000000 1.000000000 </Rotation>
+               <Translation>-0.008820930 0.012743193 -0.170993557 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JKD*:*b9d5fa456d034e21ace1d56d" name="Upper Leg &lt;1&gt;" uid="MBHJ80fXZqgN5Ku24">
+            <Transform>
+               <Rotation>1.000000000 -0.000000000 0.000000000 0.000000000 1.000000000 -0.000000000 0.000000000 0.000000000 1.000000000 </Rotation>
+               <Translation>-0.018820930 -0.087256807 -0.015993557 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JKD*:*b9d5fa456d034e21ace1d56d" name="Upper Leg &lt;2&gt;" uid="MbOV1lRb1iWQNZ8uc">
+            <Transform>
+               <Rotation>1.000000000 -0.000000000 -0.000000000 -0.000000000 1.000000000 0.000000000 0.000000000 -0.000000000 1.000000000 </Rotation>
+               <Translation>-0.018820930 0.012743193 -0.015993557 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JND*:*b9d5fa456d034e21ace1d56d" name="Lower Leg &lt;2&gt;" uid="M0VuR4VWJGupNGxwX">
+            <Transform>
+               <Rotation>1.000000000 -0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 0.000000000 -0.000000000 1.000000000 </Rotation>
+               <Translation>-0.018820930 0.012743193 -0.115993557 </Translation>
+            </Transform>
+         </Instance>
+      </InstanceTree>
+      <Constraints/>
+      <Joints>
+         <Revolute name="RightAnkle">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>MZmKfcRYop5VYuEvK</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 -0.000000000 -0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.000000000 0.000000000 -0.050000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>Mbat/TCp+v7kgn7G3</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 -0.000000000 0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>-0.010000000 0.000000000 0.005000000 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Revolute>
+         <Revolute name="RightKnee">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>MBHJ80fXZqgN5Ku24</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 -0.000000000 -0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.000000000 0.000000000 -0.050000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>MZmKfcRYop5VYuEvK</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 -0.000000000 -0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.000000000 0.000000000 0.050000000 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Revolute>
+         <Revolute name="RightHip">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>MNuUH0gLvV4HL6hWg</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 -0.000000000 -1.000000000 0.000000000 1.000000000 -0.000000000 </Rotation>
+                  <Translation>-0.005000000 -0.050000000 -0.020000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>MBHJ80fXZqgN5Ku24</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 -0.000000000 0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.000000000 0.000000000 0.050000000 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Revolute>
+         <Revolute name="LeftAnkle">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>M0VuR4VWJGupNGxwX</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 -0.000000000 -0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.000000000 0.000000000 -0.050000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>MfHUCk6+otyOqDNuO</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 -0.000000000 0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>-0.010000000 0.000000000 0.005000000 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Revolute>
+         <Revolute name="LeftKnee">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>MbOV1lRb1iWQNZ8uc</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 -0.000000000 -0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.000000000 0.000000000 -0.050000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>M0VuR4VWJGupNGxwX</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 -0.000000000 -0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.000000000 0.000000000 0.050000000 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Revolute>
+         <Revolute name="LeftHip">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>MNuUH0gLvV4HL6hWg</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 -0.000000000 0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>-0.005000000 0.050000000 -0.020000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>MbOV1lRb1iWQNZ8uc</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 -0.000000000 0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.000000000 0.000000000 0.050000000 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Revolute>
+      </Joints>
+   </RootAssembly>
+   <Assemblies/>
+   <Parts>
+      <Part name="Torso" uid="JHD*:*b9d5fa456d034e21ace1d56d">
+         <ModelUnits length="centimeter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.416</Mass>
+            <CenterOfMass>-0.000000000 0.000000000 0.000000000 </CenterOfMass>
+            <Inertia>0.000568533 0.000308533 0.000433333 -0.000000000 -0.000000000 -0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Torso.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.686274510" g="0.647058824" r="0.603921569"/>
+            <Diffuse a="1.000000000" b="0.686274510" g="0.647058824" r="0.603921569"/>
+            <Specular a="1.000000000" b="0.686274510" g="0.647058824" r="0.603921569"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="Upper Leg" uid="JKD*:*b9d5fa456d034e21ace1d56d">
+         <ModelUnits length="centimeter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.018378317</Mass>
+            <CenterOfMass>0.000000000 0.000000000 0.000000000 </CenterOfMass>
+            <Inertia>0.000015574 0.000015574 0.000000517 -0.000000000 -0.000000000 0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Upper Leg.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.156862745" g="0.321568627" r="0.866666667"/>
+            <Diffuse a="1.000000000" b="0.156862745" g="0.321568627" r="0.866666667"/>
+            <Specular a="1.000000000" b="0.156862745" g="0.321568627" r="0.866666667"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="Lower Leg" uid="JND*:*b9d5fa456d034e21ace1d56d">
+         <ModelUnits length="centimeter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.018378317</Mass>
+            <CenterOfMass>0.000000000 0.000000000 0.000000000 </CenterOfMass>
+            <Inertia>0.000015574 0.000015574 0.000000517 -0.000000000 -0.000000000 0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Lower Leg.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.666666667" g="0.372549020" r="0.105882353"/>
+            <Diffuse a="1.000000000" b="0.666666667" g="0.372549020" r="0.105882353"/>
+            <Specular a="1.000000000" b="0.666666667" g="0.372549020" r="0.105882353"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="Foot" uid="JQD*:*b9d5fa456d034e21ace1d56d">
+         <ModelUnits length="centimeter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.096</Mass>
+            <CenterOfMass>0.000000000 0.000000000 0.000000000 </CenterOfMass>
+            <Inertia>0.000029600 0.000052000 0.000080000 -0.000000000 -0.000000000 -0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Foot1.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.686274510" g="0.647058824" r="0.603921569"/>
+            <Diffuse a="1.000000000" b="0.686274510" g="0.647058824" r="0.603921569"/>
+            <Specular a="1.000000000" b="0.686274510" g="0.647058824" r="0.603921569"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+   </Parts>
+</SimscapeMultibodyImportXML>
