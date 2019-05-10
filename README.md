@@ -7,7 +7,7 @@ This repository contains example files for the following [MATLAB and Simulink Ro
 * [Actuation and control](https://www.mathworks.com/videos/matlab-and-simulink-robotics-arena-walking-robots-part-2-actuation-and-control-1506374631721.html)
 * [Trajectory optimization](https://www.mathworks.com/videos/matlab-and-simulink-robotics-arena-walking-robots-part-3-trajectory-optimization-1506440520726.html)
 * [Walking pattern generation](https://www.mathworks.com/videos/matlab-and-simulink-robotics-arena-walking-robots-pattern-generation-1546434170253.html)
-* [Deep reinforcement learning](https://www.mathworks.com/videos/matlab-and-simulink-robotics-arena-deep-reinforcement-learning-for-walking-robots--1551449152203.html)
+* [Deep reinforcement learning](https://www.mathworks.com/videos/deep-reinforcement-learning-for-walking-robots--1551449152203.html)
 
 You can also learn more about this example from [our blog post](https://blogs.mathworks.com/racing-lounge/2017/10/11/walking-robot-modeling-and-simulation).
 
