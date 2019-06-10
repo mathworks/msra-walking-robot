@@ -1,5 +1,5 @@
 % Sets up optimization environment for acceleration and parallel computing
-% Copyright 2017 The MathWorks, Inc.
+% Copyright 2017-2019 The MathWorks, Inc.
 
 if parallelFlag
     
@@ -14,9 +14,9 @@ if parallelFlag
     
     % Add paths and dependent files to run simulations in parallel
     rootDir = fullfile(fileparts(mfilename('fullpath')),'..');
-    addAttachedFiles(p,fullfile(rootDir,{'Robot','Optim','Libraries'}));
-    parfevalOnAll(@addpath,0,fullfile(rootDir,'Optim'), ... 
-                             genpath(fullfile(rootDir,'Robot')), ... 
+    addAttachedFiles(p,fullfile(rootDir,{'ModelingSimulation','Optimization','Libraries'}));
+    parfevalOnAll(@addpath,0,fullfile(rootDir,'Optimization'), ... 
+                             genpath(fullfile(rootDir,'ModelingSimulation')), ... 
                              genpath(fullfile(rootDir,'Libraries')));
     parfevalOnAll(@load_system,0,mdlName);
     
@@ -28,13 +28,13 @@ if parallelFlag
     end
     
     % Change each worker to unique folder so cache files do not conflict
-    cd(fullfile(rootDir,'Optim'));
+    cd(fullfile(rootDir,'Optimization'));
     if exist('temp','dir')
         rmdir('temp','s');
     end
     mkdir('temp');
     spmd
-        tempFolder = fullfile(rootDir,'Optim','temp');
+        tempFolder = fullfile(rootDir,'Optimization','temp');
         cd(tempFolder);
         folderName = tempname(tempFolder);
         mkdir(folderName);

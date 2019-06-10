@@ -85,7 +85,7 @@ plot(simout_motor.yout{4}.Values.ankle_angle.Time, simout_motor.yout{4}.Values.a
 title('Joint Angles')
 legend('Motion','Torque','Motor');
 xlabel('Time [s]');
-ylabel('Right Leg Ankle Angle [deg]');
+ylabel('Right Leg Ankle Angle [rad]');
 subplot(3,1,2)
 hold on
 plot(simout_motion.yout{4}.Values.knee_angle.Time,simout_motion.yout{4}.Values.knee_angle.Data,'b-');
@@ -93,7 +93,7 @@ plot(simout_torque.yout{4}.Values.knee_angle.Time,simout_torque.yout{4}.Values.k
 plot(simout_motor.yout{4}.Values.knee_angle.Time, simout_motor.yout{4}.Values.knee_angle.Data, 'k-');
 legend('Motion','Torque','Motor');
 xlabel('Time [s]');
-ylabel('Right Leg Knee Angle [deg]');
+ylabel('Right Leg Knee Angle [rad]');
 subplot(3,1,3)
 hold on
 plot(simout_motion.yout{4}.Values.hip_angle.Time,simout_motion.yout{4}.Values.hip_angle.Data,'b-');
@@ -101,7 +101,7 @@ plot(simout_torque.yout{4}.Values.hip_angle.Time,simout_torque.yout{4}.Values.hi
 plot(simout_motor.yout{4}.Values.hip_angle.Time, simout_motor.yout{4}.Values.hip_angle.Data, 'k-');
 legend('Motion','Torque','Motor');
 xlabel('Time [s]');
-ylabel('Right Leg Hip Angle [deg]');
+ylabel('Right Leg Hip Angle [rad]');
 
 
 %% Cleanup
