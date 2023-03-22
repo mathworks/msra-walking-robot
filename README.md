@@ -1,7 +1,7 @@
 # Walking Robot Examples
 ### Copyright 2017-2019 The MathWorks, Inc.
 
-This repository contains example files for the following [MATLAB and Simulink Robotics Arena](https://www.mathworks.com/academia/student-competitions/roboticsarena.html) videos on walking robots.
+This repository contains example files for the following [MATLAB and Simulink Robotics Arena](https://www.mathworks.com/academia/student-competitions/tutorials-videos.html) videos on walking robots.
 
 * [Modeling and simulation](https://www.mathworks.com/videos/modeling-and-simulation-of-walking-robots-1576560207573.html)
 * [Actuation and control](https://www.mathworks.com/videos/matlab-and-simulink-robotics-arena-modeling-pneumatic-robot-actuators-part-1-1542190287608.html)
